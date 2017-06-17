@@ -55,5 +55,5 @@ CREATE TABLE `undispatched_events` (
 
 ## start 
 ```
-python Main.py
+python main.py
 ```
