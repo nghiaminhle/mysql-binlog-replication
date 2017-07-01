@@ -27,6 +27,9 @@ pip install raven
 https://docs.sentry.io/clients/python/
 
 ## Configurations
+
+/apollo/configurations.py
+
 ```
 mysql_settings = {'host': '127.0.0.1', 'port': 3307,'user': 'admin', 'passwd': 'admin'}
 kafka_bootstrap_server = 'localhost:9092'
@@ -70,5 +73,5 @@ CREATE TABLE `undispatched_events` (
 
 ## start 
 ```
-python main.py
+python binlog_listener.py
 ```
