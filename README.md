@@ -58,15 +58,7 @@ CREATE TABLE `undispatched_events` (
   `retry_times` tinyint(4) DEFAULT '0',
   `payload` text,
   `error` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `event_store_routing_key_index` (`routing_key`),
-  KEY `event_store_type_index` (`type`),
-  KEY `event_store_object_id_index` (`object_id`),
-  KEY `event_store_destination_index` (`destination`),
-  KEY `event_store_topic_index` (`topic`),
-  KEY `event_store_status_index` (`status`),
-  KEY `event_store_retry_times_index` (`retry_times`),
-  KEY `event_store_message_id_uindex` (`message_id`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=396 DEFAULT CHARSET=utf8;
 
 ```
