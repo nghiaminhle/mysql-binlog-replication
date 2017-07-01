@@ -3,26 +3,36 @@
 ## Requirement
 python3.5 and newer
 
-six
+**six**
+
 pip install six
 
-python kafka
+**python kafka**
+
 pip install kafka-python
+
 https://github.com/dpkp/kafka-python
 
-python mysql replication
+**python mysql replication**
+
 pip install mysql-replication
+
 https://github.com/noplay/python-mysql-replication
 
-python mongo
+**python mongo**
+
 pip install pymongo
+
 https://github.com/mongodb/mongo-python-driver 
 
-graypy - gray log
+**graypy - gray log**
+
 pip install graypy
+
 https://github.com/severb/graypy
 
-raven - sentry
+**raven - sentry**
+
 pip install raven
 https://docs.sentry.io/clients/python/
 
