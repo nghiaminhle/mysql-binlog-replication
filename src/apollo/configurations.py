@@ -12,7 +12,7 @@ binlog_consumer_group = 'log_reader'
 max_retry_count = 3
 time_sleep_pubish_error = 1 # in seconds
 limitation_pending_queue = 10000
-monitored_topics = ['backorder']
+monitored_topics = ['person']
 
 #mongo setting 
 mongo_setting = {'host': 'localhost', 'port': 28017, 'database': 'integration'}
@@ -28,5 +28,5 @@ limit_commit_check_point_time = 5
 #condition for filtering
 filtered_conditions = [
     {'schema': 'test', 'table':'product', 'event_type': 'update', 'topic':'product'},
-    {'schema': 'test', 'table':'person', 'event_type': 'update', 'topic':'backorder', 'changed_columns':'name,value', 'filtered_columns':'name,value'},
+    {'schema': 'test', 'table':'person', 'event_type': 'update', 'topic':'person', 'changed_columns':'name,value', 'filtered_columns':'name,value'},
     {'schema': 'test', 'table':'product', 'event_type': 'update', 'topic':'product_review', 'changed_columns':'reviews_count,rating_summary,rating_point', 'filtered_columns':'reviews_count,rating_summary,rating_point'}]

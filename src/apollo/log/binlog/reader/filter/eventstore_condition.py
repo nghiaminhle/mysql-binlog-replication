@@ -19,7 +19,6 @@ class EventStoreCondition(BinLogCondition):
         log_metadata = BinLogMetadata(log_pos, log_file, binlogevent.schema, binlogevent.table)
         row_vals = row['values']
         message = MessageEventStore(INSERT_EVENT,binlogevent.schema,binlogevent.table,binlogevent.primary_key,row_vals)
-        #envelope = KafkaEnvelope(message,log_metadata,row_vals['topic'],row_vals['routing_key'])
-        envelope = KafkaEnvelope(message,log_metadata, "backorder",row_vals['routing_key'])
+        envelope = KafkaEnvelope(message,log_metadata,row_vals['topic'],row_vals['routing_key'])
         
         return envelope
