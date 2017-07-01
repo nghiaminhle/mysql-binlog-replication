@@ -4,14 +4,32 @@
 python3.5 and newer
 
 six
+pip install six
 
 python kafka
+pip install kafka-python
 https://github.com/dpkp/kafka-python
 
 python mysql replication
+pip install mysql-replication
 https://github.com/noplay/python-mysql-replication
 
+python mongo
+pip install pymongo
+https://github.com/mongodb/mongo-python-driver 
+
+graypy - gray log
+pip install graypy
+https://github.com/severb/graypy
+
+raven - sentry
+pip install raven
+https://docs.sentry.io/clients/python/
+
 ## Configurations
+
+/apollo/configurations.py
+
 ```
 mysql_settings = {'host': '127.0.0.1', 'port': 3307,'user': 'admin', 'passwd': 'admin'}
 kafka_bootstrap_server = 'localhost:9092'
@@ -55,5 +73,5 @@ CREATE TABLE `undispatched_events` (
 
 ## start 
 ```
-python main.py
+python binlog_listener.py
 ```
