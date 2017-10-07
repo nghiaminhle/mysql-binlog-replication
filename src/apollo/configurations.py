@@ -1,7 +1,7 @@
 # production seting
 mysql_settings = {'host': '', 'port': 3306,'user': '', 'passwd': ''}
 kafka_bootstrap_server = ''
-event_table = 'event_table'
+event_table = 'undispatched_events'
 schema = 'test_db'
 server_id=313
 topic_binlog='integration_binlog'
